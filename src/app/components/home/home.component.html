@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1 class="display-6">Peliculas APP</h1>
+    <p class="lead">Aplicación de peliculas hecha en Angular 6, bla bla bla bla.</p>
+</div>
+
+<div class="container">
+    <app-gallery [peliculas]="cartelera | slice: 0:6" titulo="Peliculas en Cartelera"></app-gallery>
+    <app-gallery [peliculas]="populares | slice: 0:6" titulo="Peliculas Populares"></app-gallery>
+    <app-gallery [peliculas]="infantiles | slice: 0:6" titulo="Peliculas Infantiles"></app-gallery>
+</div>
